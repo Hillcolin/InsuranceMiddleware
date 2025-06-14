@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class InsuranceExpChecker {
 	
-	private static final String BASE_URL = "https://684cd24d65ed08713914599d.mockapi.io/api/insurance/Users";
+	private static final String BASE_URL = "https://684cd24d65ed08713914599d.mockapi.io/api/insurance/Users";  //MockAPI link
 	
 	private HttpClient client;
 	
