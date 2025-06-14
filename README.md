@@ -6,25 +6,9 @@ A simple tool that contacts a MockAPI endpoint to collect user information and c
 
 ---
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
----
-
 ## Features
 
 - **Contacts MockAPI Endpoint:** Fetches user data from a specified MockAPI endpoint.
 - **Policy Expiry Check:** Evaluates whether each user's policy is expired based on the data returned.
 - **Clear Output:** Displays results in an easy-to-read format.
 
----
-
-## Installation
-
-1. **Clone the Repository:**
