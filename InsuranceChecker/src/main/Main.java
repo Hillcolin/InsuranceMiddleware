@@ -16,30 +16,27 @@ public class Main {
 		InsuranceExpChecker contactAPI = new InsuranceExpChecker();
 		String response = contactAPI.getInfo();
 		
-		//System.out.println(response);
-		
-		
+
 		//Converts the json response from the api to som
 		Gson gson = new Gson();
 		Type listType = new TypeToken<List<Users>>(){}.getType();
-        List<Users> people = gson.fromJson(response, listType);
+        	List<Users> people = gson.fromJson(response, listType);
         
-        //Goes through the users collected in the endpoint and sorts them
+        	//Goes through the users collected in the endpoint and sorts them
         
-        Date todayDate = new Date();
-        int MAX_NAME_LENGTH = 35;
+       		Date todayDate = new Date();
+        	int MAX_NAME_LENGTH = 35;
         
-        for (Users p : people) {
-        	if (p.getPolicyExpiry().after(todayDate)) {
-        		System.out.printf("%2d - %-" + MAX_NAME_LENGTH + "s   %-9s  %n", p.getId(), p.getName(), "Not Expired");
-        	}
+        	for (Users p : people) {
+        		if (p.getPolicyExpiry().after(todayDate)) {
+        			System.out.printf("%2d - %-" + MAX_NAME_LENGTH + "s   %-9s  %n", p.getId(), p.getName(), "Not Expired");
+        		}
         	
-        	if (p.getPolicyExpiry().before(todayDate))  {
-        		System.out.printf("%2d - %-" + MAX_NAME_LENGTH + "s   %-9s %n",
-        	            p.getId(), p.getName(), "EXPIRED");
-        	}
+        		if (p.getPolicyExpiry().before(todayDate))  {
+        			System.out.printf("%2d - %-" + MAX_NAME_LENGTH + "s   %-9s %n", p.getId(), p.getName(), "EXPIRED");
+        		}
         	
-	}
+		}
 
-}
+	}
 }
