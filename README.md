@@ -1,3 +1,30 @@
-h2
+# User Policy Expiry Checker
 
-![image](https://github.com/user-attachments/assets/167e628f-0730-4884-acd4-5ccd6c63ce54)
+A simple tool that contacts a MockAPI endpoint to collect user information and checks if each user's policy has expired, then outputs the result.
+
+![MockAPI Endpoint Example](https://github.com/user-attachments/assets/167e628f-0730-4884-acd4-5ccd6c63ce54)
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
+## Features
+
+- **Contacts MockAPI Endpoint:** Fetches user data from a specified MockAPI endpoint.
+- **Policy Expiry Check:** Evaluates whether each user's policy is expired based on the data returned.
+- **Clear Output:** Displays results in an easy-to-read format.
+
+---
+
+## Installation
+
+1. **Clone the Repository:**
